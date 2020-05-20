@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats | KaKao Clone</title>
-    <script
-      src="https://kit.fontawesome.com/3c2bd07bef.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
-    ></script>
+    />
+    <link rel="stylesheet" href="css/styles.css">
+  </script>
   </head>
   <body>
     <div class="status-bar">
@@ -19,7 +23,7 @@
         <i class="fas fa-volume-up"></i>
         <i class="fas fa-wifi"></i>
         <i class="fas fa-battery-three-quarters"></i>
-        <span class="status-var__battery-level">75%</span>
+        <span class="status-bar__battery-level">75%</span>
       </div>
     </div>
     <header class="header">
@@ -42,17 +46,24 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/avatar.png" />
-              <div class="chat__content">
-                <span class="span chat__username">
-                  Sang Joon
-                </span>
-                <span class="chat__preview">Going Home</span>
+            <div class="chats__chat friend friend--lag">
+              <div class="friend__column"><img src="images/avatar.png" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Yoo Sang Jun
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timesatamp">Yesterday</span>
+              <div class="friend__column">
+                <div class="friends__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -67,6 +78,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i
           ></a>
         </li>
